@@ -35,6 +35,26 @@
         @content
     }
 };
+@mixin ultraSwiper(){
+    @media (max-width:$breakpoint_for_swiper_ultra){
+        @content
+    }
+};
+@mixin cardsSecond(){
+    @media (max-width:$breakpoint_for_cards_second){
+        @content
+    }
+};
+@mixin finalDetails(){
+    @media (max-width:$breakpoint_for_final_details){
+        @content
+    }
+};
+@mixin png(){
+    @media (max-width:$breakpoint_for_png){
+        @content
+    }
+};
 @mixin pictures(){
     @media (max-width: $breakpoint_for_pictures){
         @content

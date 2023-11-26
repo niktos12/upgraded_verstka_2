@@ -1,6 +1,9 @@
 header{
     background-color: #f8f1d6;
     margin-bottom: 80px;
+    position: sticky;
+    top: 0;
+    transition: background-color .5s ease;
     .header{
         display: flex;
         flex-direction: row;
@@ -15,12 +18,27 @@ header{
             flex-direction: row;
             gap: 16px;
             align-items: center;
+            .menu{
+                display: none;
+                cursor: pointer;
+                transition: .5s ease;
+                @include finalSwiper(){
+                    display: flex;
+                }
+            }
+            .menu:hover{
+                background-color: #fff;
+                padding: 6px;
+                border-radius: 10px;
+            }
             .a-nav{
                 text-decoration: none;
                 font-size: 16px;
                 color: #78350F;
+                @include finalSwiper(){
+                    display: none;
+                }
             }
-            
             .sign-up{
                 font-size: 16px;
                 color: #78350F;
@@ -32,6 +50,9 @@ header{
                 background-color: transparent;
                 cursor: pointer;
                 transition: .5s ease;
+                @include finalSwiper(){
+                    display: none;
+                }
             }
             .sign-up:hover{
                 background-color: #fff;

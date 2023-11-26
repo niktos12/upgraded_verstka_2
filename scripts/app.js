@@ -22,28 +22,7 @@ const swiper = new Swiper('.swiper', {
         },
     }
 })
-const swiperBtns = new Swiper('.swiperBtns', {
-    loop:true,
-    slidesPerView: 5,
-    mousewheel: true,
-    spaceBetween:12,
-    slidesPerGroup: 1,
-    width:650,
-    grabCursor:true,
-    speed:1000,
-    freeMode: true,
-    slidesCentered: true,
-    breakpoints:{
-        841:{
-        slidesPerView: 6,
-        width:10,
-        freeMode:false,
-        loop:false,
 
-    },
-    }
-    
-})
 
 const buttons = document.querySelectorAll('.advantage-btn');
 const image = document.getElementById('image');
@@ -62,3 +41,11 @@ buttons.forEach(function(button) {
         
     });
 });
+window.onscroll = function(){
+    const header = document.getElementById('sticky-header');
+    if(window.pageYOffset > 0){
+        header.style.backgroundColor = '#0F172A';
+    }else{
+        header.style.backgroundColor = 'transparent';
+    }
+}
