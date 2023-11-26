@@ -1,0 +1,29 @@
+@import '../containers/media.scss';
+:root{
+    --container: 1400px;
+    // @include laptop{
+    //     --container:1600px;
+    // };
+    @include smallLaptop(){
+        --container: 1400px;
+    };
+    @include horizontalTable{
+        --container: 1240px;
+    };
+    @include verticalTable{
+        --container: 880px;
+    };
+    @include defaultMobile{
+        --container: 375px;
+    };
+};
+
+
+
+
+
+
+.container{
+    max-width: var(--container);
+    margin: 0 auto;
+}

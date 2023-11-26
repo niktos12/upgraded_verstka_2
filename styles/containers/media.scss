@@ -1,0 +1,122 @@
+@import 'variables.scss';
+
+@mixin cards(){
+    @media (max-width:$breakpoint_for_cards){
+        @content
+    }
+};
+@mixin microLaptop(){
+    @media(max-width: $breakpoint_micro_laptop){
+        @content
+    }
+};
+@mixin headerAdaptive(){
+    @media (max-width:$breakpoint_for_header){
+        @content
+    }
+};
+@mixin cards(){
+    @media (max-width:$breakpoint_for_cards){
+        @content
+    }
+};
+@mixin swiperAdaptive(){
+    @media (max-width:$breakpoint_for_swiper_btns){
+        @content
+    }
+};
+@mixin finalSwiper(){
+    @media (max-width:$breakpoint_for_swiper_second){
+        @content
+    }
+};
+@mixin aller(){
+    @media (max-width:$breakpoint_for_all){
+        @content
+    }
+};
+@mixin pictures(){
+    @media (max-width: $breakpoint_for_pictures){
+        @content
+    }
+};
+@mixin footerAdaptive(){
+    @media (max-width: $breakpoint_for_footer){
+        @content
+    }
+};
+@mixin adaptiveCards(){
+    @media (max-width: $breakpoint_for_adaptive_cards){
+        @content
+    }
+};
+@mixin final(){
+    @media(max-width: $breakpoint_for_final){
+        @content
+    }
+};
+@mixin presentation(){
+    @media (max-width: $breakpoint_for_presentation){
+        @content
+    }
+};
+@mixin footerAdaptive(){
+    @media (max-width: $breakpoint_for_footer){
+        @content
+    }
+};
+@mixin desktop(){
+    @media (max-width:$breakpoint_desktop){
+        @content
+    }
+};
+@mixin defaultLaptop(){
+    @media (max-width: $breakpoint_laptop){
+        @content
+    }
+};
+@mixin smallLaptop(){
+    @media (max-width:$breakpoint_small_laptop){
+        @content
+    }
+};
+@mixin finalHeader(){
+    @media (max-width:$breakpoint_for_final_header){
+        @content
+    }
+};
+@mixin horizontalTable(){
+    @media (max-width: $breakpoint_tabletHorizontal){
+        @content
+    }
+};
+@mixin verticalTable(){
+    @media (max-width: $breakpoint_tabletVertical){
+        @content
+    }
+};
+@mixin adaptiveNavIcon(){
+    @media (max-width: $breakpoint_for_icon_nav){
+        @content;
+    }
+}
+@mixin smallVerticalTable(){
+    @media (max-width: $breakpoint_small_tabletVertical){
+        @content
+    }
+};
+@mixin defaultMobile(){
+    @media (max-width: $breakpoint_mobile){
+        @content
+    }
+};
+@mixin smallMobile(){
+    @media (max-width: $breakpoint_small_mobile){
+        @content
+    }
+};
+@mixin megaSmallMobile(){
+    @media (max-width: $breakpoint_small_mega_mobile){
+        @content
+    }
+};
