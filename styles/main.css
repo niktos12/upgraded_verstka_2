@@ -33,6 +33,7 @@ header {
   position: sticky;
   top: 0;
   transition: background-color 0.5s ease;
+  z-index: 2;
 }
 header .header {
   display: flex;

@@ -4,6 +4,7 @@ header{
     position: sticky;
     top: 0;
     transition: background-color .5s ease;
+    z-index: 2;
     .header{
         display: flex;
         flex-direction: row;
