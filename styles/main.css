@@ -32,7 +32,7 @@ header {
   margin-bottom: 80px;
   position: sticky;
   top: 0;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.2s ease;
   z-index: 2;
 }
 header .header {
@@ -86,7 +86,7 @@ header .header .a-navs .sign-up {
   border: 2px solid #78350F;
   background-color: transparent;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: 0.2s ease;
 }
 @media (max-width: 794px) {
   header .header .a-navs .sign-up {
@@ -101,18 +101,20 @@ header .menu-burger {
   transition: all 0.7s ease;
   padding: 5px 0;
 }
-header .active {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header .active .menu-a {
-  text-decoration: none;
-  padding: 5px 10px;
-}
-header .active .menu-a:hover {
-  background-color: #8b9fbb;
+@media (max-width: 794px) {
+  header .active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .active .menu-a {
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  header .active .menu-a:hover {
+    background-color: #8b9fbb;
+  }
 }
 
 body {

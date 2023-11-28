@@ -3,7 +3,7 @@ header{
     margin-bottom: 80px;
     position: sticky;
     top: 0;
-    transition: background-color .5s ease;
+    transition: background-color .2s ease;
     z-index: 2;
     .header{
         display: flex;
@@ -50,7 +50,7 @@ header{
                 border: 2px solid #78350F;
                 background-color: transparent;
                 cursor: pointer;
-                transition: .5s ease;
+                transition: .2s ease;
                 @include finalSwiper(){
                     display: none;
                 }
@@ -67,7 +67,8 @@ header{
         
     }
     .active{
-        display: flex;
+        @include finalSwiper(){
+            display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -78,6 +79,8 @@ header{
         .menu-a:hover{
             background-color: #8b9fbb;
         }
+        }
+        
     }
     
 }
