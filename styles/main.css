@@ -96,6 +96,24 @@ header .header .a-navs .sign-up {
 header .header .a-navs .sign-up:hover {
   background-color: #fff;
 }
+header .menu-burger {
+  display: none;
+  transition: all 0.7s ease;
+  padding: 5px 0;
+}
+header .active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .active .menu-a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+header .active .menu-a:hover {
+  background-color: #8b9fbb;
+}
 
 body {
   font-family: "Roboto", sans-serif;

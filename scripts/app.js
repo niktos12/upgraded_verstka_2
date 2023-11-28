@@ -41,11 +41,36 @@ buttons.forEach(function(button) {
         
     });
 });
+const header = document.getElementById('sticky-header');
+const menu = document.getElementById('burger')
+const iconMenu = document.getElementById('menu-icon')
+const menuNav = document.getElementsByClassName('menu-a');
 window.onscroll = function(){
-    const header = document.getElementById('sticky-header');
+    
     if(window.pageYOffset > 0){
         header.style.backgroundColor = '#0F172A';
+        menu.style.backgroundColor = '#0F172A';
+        for(let i = 0; i < menuNav.length; i++){
+            menuNav[i].style.color = '#fff';
+        }
+        
     }else{
         header.style.backgroundColor = 'transparent';
+        menu.style.backgroundColor = 'transparent';
+        for(let i = 0; i < menuNav.length; i++){
+            menuNav[i].style.color = '#0F172A';
+        }
     }
 }
+
+iconMenu.addEventListener('click', function(){
+    menu.classList.toggle('active');
+})
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

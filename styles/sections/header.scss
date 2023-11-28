@@ -60,4 +60,24 @@ header{
             }
         }
     }
+    .menu-burger{
+        display: none;
+        transition: all .7s ease;
+        padding: 5px 0;
+        
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .menu-a{
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .menu-a:hover{
+            background-color: #8b9fbb;
+        }
+    }
+    
 }
